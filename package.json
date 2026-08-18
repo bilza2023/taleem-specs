@@ -1,0 +1,19 @@
+{
+  "name": "taleem-specs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./enums": "./enums/index.js",
+    "./schema/deck-v2": "./schema/zodDeckV2.js",
+    "./schema/publish": "./schema/zodPublish.js",
+    "./validation/deck-v2": "./validation/validateDeckV2.js",
+    "./validation/timeline-v2": "./validation/validateTimelineV2.js",
+    "./create/presentation-v2": "./create/createPresentationV2.js",
+    "./samples/golden-deck": "./samples/golden-deck.json"
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  }
+}
