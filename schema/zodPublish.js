@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { LiberayItemType } from "../enums/LibraryItemType.js";
+import { LibraryItemType } from "../enums/LibraryItemType.js";
 
 const PublishGroupingSchema = z.object({
 	slug: z.string().min(1),
@@ -21,8 +21,8 @@ const PublishLibraryItemSchema = z.object({
 	description: z.string().optional(),
 	thumbnail: z.string().optional(),
 	type: z.enum([
-		LiberayItemType.ARTICLE,
-		LiberayItemType.PLAYER
+		LibraryItemType.ARTICLE,
+		LibraryItemType.PLAYER
 	]),
 	body: z.string(),
 	courseSlug: z.string().min(1),
